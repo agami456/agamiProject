@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IVVVIIVVVI</title>
+
+    <script>
+      function ImgChange(id){
+        var ImgSrc = document.getElementById(id).src;
+        var MainImg = document.getElementById("MainJpg");
+
+        MainImg.src = ImgSrc;
+      }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <div align="right">
+      <span id="TopBar0">
+        <span class="TopMenu0">로그인</span>
+        <span class="TopMenu0">블로그홈</span>
+        <span class="TopMenu0" style="border:none;">즐겨찾기</span>
+      </span>
+    </div><br>
+
+    <div class="TopBar1">
+      <span class="TopMenu1">공지사항</span>
+      <span class="TopMenu1"><a href="https://blog.naver.com/dra94">블로그</a></span>
+      <span class="TopMenu1"><a href="https://blog.naver.com/agami456">2CH번역</a></span>
+      <span class="TopMenu1"><a href="https://www.naver.com/">네이버</a></span>
+      <span class="TopMenu1"><a href="https://www.google.co.kr/">구글</a></span>
+    </div>
+    <div class="TopBar2">
+      <span style="color:#FF0080; padding-left:5px; padding-right:5px;">검색</span>
+      <input type="text" value="" style="width:300px;">
+      <input type="button" value="GO">
+    </div>
+
+    <div style="font-size: 46px; color:#FA58D0; margin-top:16px;">
+      <span style="margin-left:10px; "></span>
+      Album
+    </div>
+    <div id="jpgBox">
+      <img src="IMG/albumImg.jpg" id="MainJpg" width="100%">
+    </div>
+    <div class="jpgList">
+      <span class="IL">
+        <img src="IMG/jpg1.png" id="I1" width="30%" onclick="ImgChange(this.id)">
+      </span>
+      <span class="IL">
+        <img src="IMG/jpg2.png" id="I2" width="30%" onclick="ImgChange(this.id)">
+      </span>
+      <span class="IL">
+        <img src="IMG/jpg3.png" id="I3" width="30%" onclick="ImgChange(this.id)">
+      </span>
+      <span class="IL">
+        <img src="IMG/jpg4.png" id="I4" width="30%" onclick="ImgChange(this.id)">
+      </span>
+      <span class="IL">
+        <img src="IMG/jpg5.png" id="I5" width="30%" onclick="ImgChange(this.id)">
+      </span>
+      <span class="IL">
+        <img src="IMG/jpg6.png" id="I6" width="30%" onclick="ImgChange(this.id)">
+      </span>
+      <span class="IL">
+        <img src="IMG/jpg7.png" id="I7" width="30%" onclick="ImgChange(this.id)">
+      </span>
+    </div>
+    <div class="jpgList">
+
+
+    </div>
+    <p>
+        <!-- 라이브리 시티 설치 코드 -->
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTkzMC8xMjQ2Ng==">
+      	<script type="text/javascript">
+        window.livereOptions={
+          refer:'www.agami456.github.io/agamiIVVVI/'
+        };
+         (function(d, s) {
+             var j, e = d.getElementsByTagName(s)[0];
+
+             if (typeof LivereTower === 'function') { return; }
+
+             j = d.createElement(s);
+             j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+             j.async = true;
+
+             e.parentNode.insertBefore(j, e);
+         })(document, 'script');
+      	</script>
+      <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+      </div>
+      <!-- 시티 설치 코드 끝 -->
+    </p>
+  </body>
+</html>
